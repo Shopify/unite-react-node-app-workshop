@@ -1,0 +1,45 @@
+{
+  "name": "shopify-koa-app",
+  "version": "1.0.0",
+  "description": "An embedded Shopify app!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node index.js",
+    "start": "npm run dev"
+  },
+  "author": "themallen",
+  "license": "MIT",
+  "dependencies": {
+    "@shopify/koa-shopify-auth": "^2.0.6",
+    "@shopify/koa-shopify-graphql-proxy": "^1.0.2",
+    "@shopify/react-html": "^1.0.0",
+    "@shopify/react-shopify-app-route-propagator": "^1.0.0",
+    "apollo-boost": "^0.1.4",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "dotenv": "^5.0.1",
+    "graphql": "^0.13.2",
+    "isomorphic-fetch": "^2.2.1",
+    "koa": "^2.5.0",
+    "koa-session": "^5.8.1",
+    "koa-webpack": "^3.0.2",
+    "npm": "^5.8.0",
+    "react": "^16.3.2",
+    "react-apollo": "^2.1.0-beta.3",
+    "react-dom": "^16.3.2",
+    "react-fetch-component": "^6.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "nodemon": "^1.17.3",
+    "prettier": "^1.12.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "typescript.autoImportSuggestions.enabled": false
+}
