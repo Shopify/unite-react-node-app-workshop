@@ -4,6 +4,7 @@ import session from 'koa-session';
 import createShopifyAuth, {
   createVerifyRequest,
 } from '@shopify/koa-shopify-auth';
+import webpack from 'koa-webpack';
 
 import renderReactApp from './render-react-app';
 
@@ -33,6 +34,8 @@ app.use(
 );
 
 app.use(createVerifyRequest());
+
+app.use(webpack());
 
 app.use(renderReactApp);
 

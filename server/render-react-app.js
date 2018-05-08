@@ -6,7 +6,7 @@ import App from '../app/App';
 
 export default (ctx) => {
   const markup = renderToString(
-    <HTML>
+    <HTML deferedScripts={[{path: 'bundle.js'}]}>
       <App />
     </HTML>,
   );
