@@ -5,6 +5,7 @@ import createShopifyAuth, {
   createVerifyRequest,
 } from '@shopify/koa-shopify-auth';
 import webpack from 'koa-webpack';
+import graphQLProxy from '@shopify/koa-shopify-graphql-proxy';
 
 import renderReactApp from './render-react-app';
 
@@ -32,6 +33,8 @@ app.use(
     },
   }),
 );
+
+app.use(graphQLProxy)
 
 app.use(createVerifyRequest());
 
