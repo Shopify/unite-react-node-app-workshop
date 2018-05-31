@@ -205,7 +205,11 @@ You might see an error screen that looks like this:
 
 To solve this error, we need to login to our [partners dashboard](https://partners.shopify.com/organizations), go to our **App Info** and add `YOUR_HTTPS_NGROK_URL/auth/callback` to the "Whitelisted redirection URL(s)" textarea.
 
-Now if you try to authenticate again, (`YOUR_HTTPS_NGROK_URL/auth?shop=YOUR_SHOP_DOMAIN`) it should take you to install the app in the Shopify admin. Once it's installed you can verify it shows up by going to `YOUR_SHOPIFY_URL/admin/apps`.
+Now if you try to authenticate again, (`YOUR_HTTPS_NGROK_URL/auth?shop=YOUR_SHOP_DOMAIN`) it should take you to install the app in the Shopify admin. Once it's installed you can verify it shows up by going to `YOUR_SHOPIFY_URL/admin/apps`. You should see your app in the list of **Installed apps**.
+
+You can also click on your app to see it running inside of a frame within the Shopify admin. Note the URL is now `YOUR_SHOPIFY_URL/admin/apps/YOUR_APP_NAME`. For the rest of the workshop, you can verify your changes to your app and see it running by visiting either of the following URLs:
+* `YOUR_HTTPS_NGROK_URL`
+* `YOUR_SHOPIFY_URL/admin/apps/YOUR_APP_NAME`
 
 We now have an authentication route, but users can still go straight to our index without logging in. You can verify this by clearing your cookies or loading your ngrok url in an incognito tab. The next step will protect our `Hello Unite` message with a verification middleware.
 
@@ -401,7 +405,7 @@ ReactDOM.hydrate(<App />, document.getElementById('app'));
 
 But where does this element with the `app` id come from? Well, the HTML component we imported from `@shopify/react-html` automatically wraps our contents in a div with an id of `app`. Conveniently it will also add our client-side script to the markup, if we tell it to.
 
-We’ll use Webpack 4 for this. Webpack is an open-source Javascript module bundler. It consumes your client side code, traverses its dependencies, and generates static assets representing those modules.
+We’ll use **Webpack 4** for this. Webpack is an open-source Javascript module bundler. It consumes your client side code, traverses its dependencies, and generates static assets representing those modules.
 
 Again, first step is to install the packages we need:
 
@@ -500,7 +504,7 @@ The first thing we need to do to work with a GraphQL API is to install a GraphQL
 Let's start by installing the Apollo dependencies, `react-apollo` and `apollo-boost`:
 
 ```bash
-npm add apollo-boost react-apollo@beta
+npm add apollo-boost react-apollo
 ```
 
 We also have a Shopify middleware that we are going to add in order to securely proxy GraphQL requests from our app to Shopify:
