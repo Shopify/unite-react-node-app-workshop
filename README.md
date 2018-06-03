@@ -68,17 +68,6 @@ If successful, you should see a hello message in your browser.
 
 If you ran into any issues with the above steps, please reach out to matt.seccafien@shopify.com before the workshop.
 
-## Using this repo
-
-The starting stage of each step of the workshop is represented by a branch in this repo. If you fall behind or accidentally get into a broken state, you can always checkout the appropriate branch.
-
-For example, if you are still on step1 and the workshop has moved on to step2, you can run:
-
-```
-git stash
-git checkout step2
-```
-
 ## What's included
 
 We have pre-configured a number of tools to get started quickly. You do not need to have a deep understanding of them for this workshop, however feel free to learn more about them in the following links.
@@ -88,3 +77,6 @@ We have pre-configured a number of tools to get started quickly. You do not need
 * [prettier](https://prettier.io/) make our code look pretty and maintains consistency
 * [dotenv](https://github.com/motdotla/dotenv) helps configure our environment variables
 * [koa](https://koajs.com/) minimalistic and modern node server framework
+
+## Get started
+Follow the workshop instructions in [workshop.md](./workshop.md).
