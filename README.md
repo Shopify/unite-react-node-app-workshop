@@ -43,7 +43,7 @@ For example, for the address above you would add `https://e3fd01a0.ngrok.io/auth
 ### Set up your repository
 
 Clone this repository:<br/>
-`git clone git@github.com:Shopify/unite-react-node-app-workshop.git`
+`git clone -b devdegree unite-react-node-app-workshop`
 
 In your project root folder, rename the file `.env.example` to `.env`. Copy-paste your Shopify API Key and Shopify API Secret Key to this file. These can be found in the partners dashboard on the **App Info** page under **App credentials** (near the bottom of the page).
 
@@ -76,7 +76,7 @@ We have pre-configured a number of tools to get started quickly. You do not need
 * [webpack](https://webpack.js.org/) compiles our client-side code into a bundle
 * [prettier](https://prettier.io/) make our code look pretty and maintains consistency
 * [dotenv](https://github.com/motdotla/dotenv) helps configure our environment variables
-* [koa](https://koajs.com/) minimalistic and modern node server framework
+* [koa](https://koajs.com/) minimalistic and modern Node server framework
 
 ## Get started
 Follow the workshop instructions in [workshop.md](./workshop.md).
