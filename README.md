@@ -43,7 +43,7 @@ For example, for the address above you would add `https://e3fd01a0.ngrok.io/auth
 ### Set up your repository
 
 Clone this repository:<br/>
-`git clone -b devdegree unite-react-node-app-workshop`
+`git clone -b devdegree git@github.com:Shopify/unite-react-node-app-workshop.git`
 
 In your project root folder, rename the file `.env.example` to `.env`. Copy-paste your Shopify API Key and Shopify API Secret Key to this file. These can be found in the partners dashboard on the **App Info** page under **App credentials** (near the bottom of the page).
 
