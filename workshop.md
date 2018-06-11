@@ -642,7 +642,7 @@ We can pass this along to our `createProduct` mutation function as the `title`, 
 
 We can also use the `loading`, `data` and `error` properties from our `mutationResults` to show some user feedback.
 
-The final code for the `<Mutation />` component should look like this:
+The final code for the `<Mutation />` component should look like this and will go in the `return` statement of the `Fetch` component:
 
 ```js
 <Mutation mutation={CREATE_PRODUCT}>
