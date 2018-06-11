@@ -393,7 +393,7 @@ This is due to the fact that we are missing one crucial piece of a modern web ap
 
 #### Step 3: React in the Browser
 
-Much like we have a server folder for server code, let's create a client folder for client code. We should strive to end up with very little code in this folder as the bulk of our logic should be universal between both the server and client, living in the `/app` folder. Go ahead and create a `client/` folder and a file called `index.js` inside of it.
+Much like we have a server folder for server code, let's create a client folder for client code. We should strive to end up with very little code in this folder as the bulk of our logic should be universal between both the server and client, living in the root folder. Go ahead and create a `client/` folder and a file called `index.js` inside of it.
 
 Next we are going to mount our same React application on the client side (in the browser). This is called "hydrating" the DOM. We'll query for an element with the id `app` and we'll use that element as the place to mount our client-side React app. Our client-side script will need to include React, ReactDOM, our app component, and anything else we add in the future.
 
