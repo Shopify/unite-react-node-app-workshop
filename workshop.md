@@ -197,12 +197,17 @@ We'll also need to add `app.keys` to let us use `session` securely. Set it to yo
 app.keys = [SHOPIFY_SECRET];
 ```
 
-To try out the authentication flow, visit `YOUR_HTTPS_NGROK_URL/auth?shop=YOUR_SHOP_DOMAIN`.
+If you don't already have a Shopify store that you're willing to use for this workshop, go ahead and create one using the Partners dashboard:
+* Click on **Development Stores** in the menu on the left sidebar
+* Click on the **Create Store** button
+* Complete the required forms
+
+To try out the authentication flow (note: it won't work _yet_, see more below), visit `YOUR_HTTPS_NGROK_URL/auth?shop=YOUR_SHOP_DOMAIN`.
 
 For example, your URL might be<br/>
 https://f7d2c41b.ngrok.io/auth?shop=test-store.myshopify.com
 
-You might see an error screen that looks like this:
+You should see an error screen that looks something like this:
 ![Ngrok screenshot](public/images/oauth-error-screenshot.png)
 
 To solve this error, we need to login to our [partners dashboard](https://partners.shopify.com/organizations), go to our **App Info** and add `YOUR_HTTPS_NGROK_URL/auth/callback` to the "Whitelisted redirection URL(s)" textarea.
