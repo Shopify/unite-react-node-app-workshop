@@ -767,8 +767,7 @@ Now if you navigate to `/settings` you should see the "Settings" heading on the 
 Let's take a few minutes for a quick independent exercise:
 
 1. Try adding a few routes to your own application.
-1. Let's try adding a NotFound route and a corresponding component. You'll be able to use a shorthand when you declare the `Route`:
-```
+1. Let's try adding a NotFound route and a corresponding component. You'll be able to use a shorthand when you declare the `Route`:<br/>```
 <Route exact path="/notfound" component={NotFound}/>
 ```
 1. Our `App.js` file is getting pretty large and eventually will get unmanageable. Let’s pull each of our pages into their own component files.
