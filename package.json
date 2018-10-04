@@ -13,7 +13,7 @@
   "dependencies": {
     "@shopify/koa-shopify-auth": "^2.0.6",
     "@shopify/koa-shopify-graphql-proxy": "^1.0.2",
-    "@shopify/react-html": "^1.0.0",
+    "@shopify/react-html": "^1.0.3",
     "@shopify/react-shopify-app-route-propagator": "^1.0.0",
     "apollo-boost": "^0.1.4",
     "babel-core": "^6.26.0",
