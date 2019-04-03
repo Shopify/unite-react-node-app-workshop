@@ -3,7 +3,7 @@ const {NODE_ENV} = process.env;
 module.exports = {
   mode: NODE_ENV === 'production' ? NODE_ENV : 'development',
   // the place webpack will start when building your bundles
-  entry: ['./client/index.js'],
+  entry: ['./app/client/index.js'],
   // sets up rules for any special importers
   module: {
     rules: [
@@ -16,7 +16,8 @@ module.exports = {
   },
   // file extensions for webpack to look at
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    mainFields:['browser', 'main', 'module'],
+    extensions: ['*', '.js', '.jsx', '.json'],
   },
   // where webpack will output your finished bundle
   output: {
