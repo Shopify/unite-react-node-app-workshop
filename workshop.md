@@ -454,7 +454,7 @@ Let's import that component into our App (`app/App.js`):
 import GameList from './components/GameList';
 ```
 
-Our games are going to be coming from [https://boardgameslist.herokuapp.com](https://boardgameslist.herokuapp.com) and we need to write some logic to fetch them. We will also want logic to handle errors and loading while we wait for a response. This would be quite verbose to do manually so let's add a component will help us do this in a clean and easy way:
+Our games are going to be coming from [https://bgg-json.azurewebsites.net/collection/edwalter](https://bgg-json.azurewebsites.net/collection/edwalter) and we need to write some logic to fetch them. We will also want logic to handle errors and loading while we wait for a response. This would be quite verbose to do manually so let's add a component will help us do this in a clean and easy way:
 
 ```bash
 npm add react-fetch-component
@@ -473,7 +473,7 @@ In the case of the `<Fetch />` component, we will trust it to handle the details
 Let's start by just rendering the component with the URL to our API, and using the `as` prop to tell it to parse the response as `json`.
 
 ```js
-<Fetch url="https://boardgameslist.herokuapp.com" as="json" />
+<Fetch url="https://bgg-json.azurewebsites.net/collection/edwalter" as="json" />
 ```
 
 `<Fetch />` will pass the state of our request as a single object with a boolean `loading` property that we can use to check if the request is in process, an `error` property that is undefined unless there is an error in our request, and finally the resulting `data` from our request.
@@ -481,7 +481,7 @@ Let's start by just rendering the component with the URL to our API, and using t
 Now let's add logic to handle each of these properties and render content based on the state of the request.
 
 ```js
-<Fetch url="https://boardgameslist.herokuapp.com" as="json">
+<Fetch url="https://bgg-json.azurewebsites.net/collection/edwalter" as="json">
   {(fetchResults) => {
     if (fetchResults.loading) {
       return <p>Loading</p>
@@ -551,7 +551,7 @@ export default function() {
   return (
 +   <ApolloProvider client={client}>
       <h1>Board game list</h1>
-      <Fetch url="https://boardgameslist.herokuapp.com" as="json">
+      <Fetch url="hhttps://bgg-json.azurewebsites.net/collection/edwalter" as="json">
         {({loading, error, data}) => {
           if (loading) {
             return <p>loading</p>;
