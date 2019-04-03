@@ -10,13 +10,14 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ['babel-loader']
       },
     ],
   },
   // file extensions for webpack to look at
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    mainFields:['browser', 'main', 'module'],
+    extensions: ['*', '.js', '.jsx', '.gql', '.graphql'],
   },
   // where webpack will output your finished bundle
   output: {
