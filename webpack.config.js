@@ -16,7 +16,8 @@ module.exports = {
   },
   // file extensions for webpack to look at
   resolve: {
-    extensions: ['*', '.js', '.jsx'],
+    mainFields:['browser', 'main', 'module'],
+    extensions: ['*', '.js', '.jsx', '.json'],
   },
   // where webpack will output your finished bundle
   output: {
